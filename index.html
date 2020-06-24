@@ -43,7 +43,7 @@
         opacity: 0.5;
       }
 
-      li.slick-active {
+      li.slick-active.highlight {
         border: 1px solid red;
       }
 
@@ -119,6 +119,15 @@
           vertical: false,
           centerMode: true,
         });
+
+        const $dots = $(".slick-dots li");
+        $(".slick-dots li button")
+          .focus(function () {
+            $dots.addClass("highlight");
+          })
+          .blur(function () {
+            $dots.removeClass("highlight");
+          });
       });
     </script>
   </body>
