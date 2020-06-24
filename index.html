@@ -43,15 +43,17 @@
         opacity: 0.5;
       }
 
+      li.slick-active {
+        border: 1px solid red;
+      }
+
       .slick-current {
         opacity: 1;
       }
       .slick-prev:hover,
       .slick-prev:focus,
       .slick-next:hover,
-      .slick-next:focus,
-      .slick-dots li button:hover,
-      .slick-dots li button:focus {
+      .slick-next:focus {
         outline: 1px solid red;
       }
     </style>
@@ -59,6 +61,19 @@
   <body>
     <h1>Slick demo</h1>
     <section class="horizontal-center slider">
+      <div class="container">
+        <div>
+          <div>
+            <a href="//kenwheeler.github.io/slick/">Slick</a>
+          </div>
+          <div>
+            <a href="//kenwheeler.github.io/slick/">Slick</a>
+          </div>
+          <div>
+            <a href="//kenwheeler.github.io/slick/">Slick</a>
+          </div>
+        </div>
+      </div>
       <div>
         <img src="//placehold.it/350x100?text=1" alt="1" />
       </div>
@@ -95,7 +110,7 @@
       type="text/javascript"
     ></script>
 
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function () {
