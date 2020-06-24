@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Slick demo</title>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+    <style type="text/css">
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .slider {
+        width: 50%;
+        margin: 100px auto;
+      }
+
+      .slick-slide {
+        margin: 0px 20px;
+      }
+
+      .slick-slide img {
+        width: 100%;
+      }
+
+      .slick-prev:before,
+      .slick-next:before {
+        color: black;
+      }
+
+      .slick-slide {
+        transition: all ease-in-out 0.3s;
+        opacity: 0.2;
+      }
+
+      .slick-active {
+        opacity: 0.5;
+      }
+
+      .slick-current {
+        opacity: 1;
+      }
+      .slick-prev:hover,
+      .slick-prev:focus,
+      .slick-next:hover,
+      .slick-next:focus,
+      .slick-dots li button:hover,
+      .slick-dots li button:focus {
+        outline: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Slick demo</h1>
+    <section class="horizontal-center slider">
+      <div>
+        <img src="//placehold.it/350x100?text=1" alt="1" />
+      </div>
+      <div>
+        <img src="//placehold.it/350x100?text=2" alt="2" />
+      </div>
+      <div>
+        <img src="//placehold.it/350x100?text=3" alt="3" />
+      </div>
+      <div>
+        <img src="//placehold.it/350x100?text=4" alt="4" />
+      </div>
+      <div>
+        <img src="//placehold.it/350x100?text=5" alt="5" />
+      </div>
+      <div>
+        <img src="//placehold.it/350x100?text=6" alt="6" />
+      </div>
+      <div>
+        <img src="//placehold.it/350x100?text=7" alt="7" />
+      </div>
+      <div>
+        <img src="//placehold.it/350x100?text=8" alt="8" />
+      </div>
+      <div>
+        <img src="//placehold.it/350x100?text=9" alt="9" />
+      </div>
+      <div>
+        <img src="//placehold.it/350x100?text=10" alt="10" />
+      </div>
+    </section>
+    <script
+      src="//code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".horizontal-center").slick({
+          dots: true,
+          vertical: false,
+          centerMode: true,
+        });
+      });
+    </script>
+  </body>
+</html>
